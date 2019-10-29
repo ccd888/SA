@@ -11,4 +11,4 @@ Mobile application for students in the UK.<br>
 – Manage host-family stays<br>
 – Manage taxi bookings<br>
 
-*** added branch of SA_finance ***
+*** added branch of SA Finance ***
