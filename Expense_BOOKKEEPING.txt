@@ -1,9 +1,9 @@
-CREATE TABLE "Expense"."BOOKKEEPING"
+CREATE TABLE Expense.BOOKKEEPING
 (
     "student_Id" character varying(10) NOT NULL,
     financial_year date,
-    ename character varying(12) NOT NULL,
-    cname character varying(6),
+    ename character varying(15) NOT NULL,
+    cname character varying(15),
     dob date,
     "transaction date" date NOT NULL,
     school character varying(40),
@@ -24,7 +24,7 @@ WITH (
 )
 TABLESPACE pg_default;
 
-ALTER TABLE "Expense"."BOOKKEEPING"
+ALTER TABLE Expense.BOOKKEEPING
     OWNER to student365admin;
-COMMENT ON TABLE "Expense"."BOOKKEEPING"
-    IS 'Bookkeeping';
+COMMENT ON TABLE Expense.BOOKKEEPING
+IS 'Bookkeeping';
