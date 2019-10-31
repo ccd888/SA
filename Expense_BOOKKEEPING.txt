@@ -1,0 +1,30 @@
+CREATE TABLE "Expense"."BOOKKEEPING"
+(
+    "student_Id" character varying(10) NOT NULL,
+    financial_year date,
+    ename character varying(12) NOT NULL,
+    cname character varying(6),
+    dob date,
+    "transaction date" date NOT NULL,
+    school character varying(40),
+    started date,
+    apply boolean,
+    apply_fee numeric,
+    placement boolean,
+    commission numeric,
+    guardianship boolean,
+    guardian_fee numeric,
+    "de-commision" numeric,
+    deposit numeric,
+    payment numeric,
+    "desc" character varying(200)
+) 
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE "Expense"."BOOKKEEPING"
+    OWNER to student365admin;
+COMMENT ON TABLE "Expense"."BOOKKEEPING"
+    IS 'Bookkeeping';
